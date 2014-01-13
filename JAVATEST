@@ -1,5 +1,4 @@
-coding_test
-===========
+/*
 
 An integer K and a non-empty zero-indexed array A consisting of N integers are given.
 A pair of integers (P, Q), such that 0 ≤ P ≤ Q < N, is called aslice of array A.
@@ -30,13 +29,14 @@ Assume that:
 Complexity:
 •	expected worst-case time complexity is O(N);
 •	expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
+*/
 
-You can start the code as follow:
 
-//--------------------------------------------------!
+// You can start the code as follow:
+ 
 class Solution {
     public int solution(int K, int[] A) {
         // write your code here
     }
 }
-//--------------------------------------------------!
+
