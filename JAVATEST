@@ -32,7 +32,7 @@ Complexity:
 */
 
 
-// You can start the code as follow:
+// You can start the code as shown below:
  
 class Solution {
     public int solution(int K, int[] A) {
