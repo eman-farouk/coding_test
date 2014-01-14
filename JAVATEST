@@ -36,7 +36,31 @@ Complexity:
  
 class Solution {
     public int solution(int K, int[] A) {
-        // write your code here
+        {
+       // inputs
+       // int K = 2;
+       // int[] A = new int[] { 3, 5, 7, 6, 3 };
+
+        int slices = 0;
+        List<int> list = new List<int>();
+        List<KeyValuePair<int, int>> kv = new List<KeyValuePair<int, int>>();
+        for (int i = 0; i < A.Length; i++)
+        {
+            for (int j = 0; j < A.Length; j++)
+            {
+                if ((!list.Contains(A[i]) && !list.Contains(A[j]))
+                        && (max(A[i], A[j]) - min(A[i], A[j])) <= K)
+                {
+                    slices++;
+                    kv.Add(new KeyValuePair<int, int>(i, j));
+
+                }
+            }
+             list.Add(A[i]);
+        }
+        return slices;
+    }
+
     }
 }
 
